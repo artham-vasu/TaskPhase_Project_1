@@ -1,14 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=54, initial-scale=1.0">
-    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artham's Fitness</title>
+   
+
 </head>
 
+<style>
+    /* CSS RESET  */
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/boxer-1984344_1280.jpg');
+        color: seashell;
+        
+    }
+
+    .left {
+        /* border: 2px solid red;  */
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 18px;
+
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 0px;
+        font-size: 15px;
+    }
+
+    .mid {
+
+        /* border: 2px solid rgb(8, 241, 40);  */
+        display: block;
+        width: 55%;
+        margin: 18px auto;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+
+    .right {
+        /* border: 2px solid rgb(234, 250, 12);  */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 32px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-family: 'Bebas Neue', cursive;
+
+
+    }
+
+    .navbar li a {
+        color: seashell;
+        text-decoration: none;
+        padding: 34px 23px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+
+        text-decoration: none;
+        color: rgb(212, 205, 255);
+
+    }
+
+    .left img {
+        width: 45px;
+        filter: invert(100%);
+
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+    .btn2 {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        
+
+    }
+
+    .btn:hover {
+        background-color: rgb(94, 92, 92);
+    }
+    
+    .container {
+        border: 2px solid white;
+        margin: 87px 70px;
+        padding: 50px 50px;
+        width: 31%;
+        border-radius: 10px;
+    }
+    
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 334px;
+        padding: 6px;
+        border: 2px solid blue;
+        margin: 11px auto;
+        border-radius: 10px;
+        font-size: 15px;
+        
+        
+    }
+    
+    .container h1 {
+        text-align: center;
+    }
+    
+    .btn2 {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    .btn2 a{
+        text-decoration: none;
+        color: white;
+    }
+    .btn2:hover{
+        text-decoration: none;
+        background-color: rgb(94, 92, 92);
+
+    }
+</style>
+
 <body>
-    <div class="contaner">
+    <header class="header">
+        <div class="left">
+            <!-- for logo  -->
+            <img src="img/dumbbell_gym_icon_124413.png" alt="">
+            <div>AV's Gym</div>
+
+        </div>
+        <div class="mid">
+            <!-- for navbar  -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        <div class="right">
+            <!-- call to action buttons  -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+
+    </header>
+    <div class="container">
         <h1 style="text-align: center;">Login</h1>
         <form action="noaction.php">
             <div class="formgroup" style="text-align: center;">
@@ -20,10 +196,13 @@
             <div class="formgroup" style="text-align: center;">
                 <button class="btn" style="text-align: center;">Login</button>
             </div><br>
-            <div class="signUp" style="text-align: center;">
-                <button class="signUp" style="text-align: center;"><a href="signup.html"> If already not a member SignUp</button></a>
+            <div class="btn1" style="text-align: center;">
+                <button class="btn2" style="text-align: center;"><a href="/signup.html">Not a member? SignUp</button></a>
             </div><br>
+        </form>
+
         </form>
     </div>
 </body>
+
 </html>
